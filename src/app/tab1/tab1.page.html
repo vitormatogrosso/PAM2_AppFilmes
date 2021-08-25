@@ -34,7 +34,9 @@
       </ion-item-option>
     </ion-item-options>
   </ion-list>
+  </ion-item-sliding>
 
+  <ion-item-sliding>
   <ion-list lines="full">
     <ion-item>
     <ion-thumbnail slot="start">
@@ -55,13 +57,15 @@
     </ion-item>
 
         <ion-item-options (click)="exibirAlertaFavorito()" side = "end">
-          <ion-item-option color = "laranja">
+          <ion-item-option color = "danger">
             <ion-icon slot="icon-only" name="star">
           </ion-icon>
       </ion-item-option>
     </ion-item-options>
     </ion-list>
+    </ion-item-sliding>
 
+    <ion-item-sliding>
     <ion-list lines="full">
       <ion-item>
       <ion-thumbnail slot="start">
@@ -82,9 +86,10 @@
       </ion-item>
 
           <ion-item-options (click)="exibirAlertaFavorito()" side = "end">
-            <ion-item-option color = "laranja">
+            <ion-item-option color = "primary">
               <ion-icon slot="icon-only" name="star">
             </ion-icon>
         </ion-item-option>
       </ion-item-options>
-
+      </ion-list>
+    </ion-item-sliding>
