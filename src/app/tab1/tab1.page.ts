@@ -20,7 +20,7 @@ export class Tab1Page {
     console.log('Confirm Cancel: blah');
     }
     }, {
-    text: 'Okay',
+    text: 'SIM, adicionar!',
     handler: () => {
     console.log('Confirm Okay');
     }
