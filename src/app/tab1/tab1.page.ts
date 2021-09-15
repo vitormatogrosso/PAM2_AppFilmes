@@ -1,3 +1,4 @@
+import { IFilme } from '../models/IFilmes.model';
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
@@ -8,6 +9,33 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  titulo = 'App Filmes';
+  listaFilmes: IFilme [] = [
+    {
+      nome: 'Homem-Aranha: Longe de Casa',
+      lancamento: '04/07/2019 (BR)',
+      duracao: '2h 10m',
+      classificacao: '75',
+      cartaz: '../assets/SMFarFromHome.jpg',
+      generos: ['Ação', 'Aventura', 'Fantasia']
+    },
+    {
+      nome: 'Demon Slayer - Mugen Train: O Filme',
+      lancamento: '23/04/2020(US)',
+      duracao: '1h57m',
+      classificacao: '84',
+      cartaz: '../assets/KNYMugenTrain.jpg',
+      generos: ['Animação', 'Ação', 'Aventura', 'Fantasia']
+    },
+    {
+      nome: 'Corações de Ferro',
+      lancamento: '05/02/2015 (BR)',
+      duracao: '2h15m',
+      classificacao: '75',
+      cartaz: '../assets/IronHearts.jpg',
+      generos: ['Guerra', 'Drama', 'Ação']
+    }
+  ];
 
   constructor(public alertController: AlertController, public toastController: ToastController) {}
   async exibirAlertaFavorito() {
