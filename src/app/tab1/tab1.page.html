@@ -6,23 +6,25 @@
 
 <ion-content [fullscreen]="true">
   <ion-searchbar placeholder="Pesquisar"></ion-searchbar>
-  <ion-item-sliding>
+  <ion-item-sliding *ngFor="let filme of listaFilmes">
   <ion-list lines="full"> <!--atributo para que a linha ocupe toda a base do componente-->
     <ion-item>
     <ion-thumbnail slot="start">
-      <img src="../assets/SMFarFromHome.jpg">
+      <img [src]="filme.cartaz">
     </ion-thumbnail>
 
-    <ion-label class="ion-text-wrap"> <!-- classe para quebra de linha-->
+    <ion-label class="ion-text-wrap">
       <div>
-        <h1>Homem-Aranha: Longe de Casa</h1>
-        <p>04/07/2019 (BR) - 2h 10m</p>
-        <p>Ação, Aventura, Fantasia<p>
+        <h1>{{  filme.nome }}</h1>
+        <p>{{filme.lancamento}} - {{filme.duracao}}</p>
+        <ion-badge color="light" *ngFor="let genero of filme.generos">
+          {{genero}}
+        </ion-badge>
       </div>
     </ion-label>
 
     <ion-chip color="success" outline>
-      <ion-label>75%</ion-label>
+      <ion-label>{{filme.classificacao}}%</ion-label>
     </ion-chip>
     </ion-item>
 
@@ -34,23 +36,25 @@
   </ion-list>
   </ion-item-sliding>
 
-  <ion-item-sliding>
+  <ion-item-sliding *ngFor="let filme of listaFilmes">
   <ion-list lines="full">
     <ion-item>
     <ion-thumbnail slot="start">
-    <img  src ="../assets/KNYMugenTrain.jpg">
+      <img [src]="filme.cartaz">
     </ion-thumbnail>
 
     <ion-label class="ion-text-wrap">
       <div>
-      <h1>Demon Slayer - Mugen Train: O Filme</h1>
-      <p>23/04/2020(US)-1h57m</p>
-      <p>Animação, Ação, Aventura, Fantasia<p>
+        <h1>{{  filme.nome }}</h1>
+        <p>{{filme.lancamento}} - {{filme.duracao}}</p>
+        <ion-badge color="light" *ngFor="let genero of filme.generos">
+          {{genero}}
+        </ion-badge>
       </div>
     </ion-label>
 
     <ion-chip color="success" outline>
-    <ion-label>84%</ion-label>
+    <ion-label>{{filme.classificacao}}%</ion-label>
     </ion-chip>
     </ion-item>
 
@@ -63,23 +67,25 @@
     </ion-list>
     </ion-item-sliding>
 
-    <ion-item-sliding>
+    <ion-item-sliding *ngFor="let filme of listaFilmes">
     <ion-list lines="full">
       <ion-item>
       <ion-thumbnail slot="start">
-      <img  src ="../assets/IronHearts.jpg">
+        <img [src]="filme.cartaz">
       </ion-thumbnail>
 
       <ion-label class="ion-text-wrap">
         <div>
-        <h1>Corações de Ferro</h1>
-        <p>05/02/2015 (BR)- 2h15m</p>
-        <p>Guerra, Drama, Ação<p>
+          <h1>{{  filme.nome }}</h1>
+          <p>{{filme.lancamento}} - {{filme.duracao}}</p>
+          <ion-badge color="light" *ngFor="let genero of filme.generos">
+            {{genero}}
+          </ion-badge>
         </div>
       </ion-label>
 
       <ion-chip color="success" outline>
-      <ion-label>75%</ion-label>
+      <ion-label>{{filme.classificacao}}%</ion-label>
       </ion-chip>
       </ion-item>
 
