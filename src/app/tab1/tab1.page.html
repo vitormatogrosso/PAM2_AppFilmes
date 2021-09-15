@@ -7,7 +7,7 @@
 <ion-content [fullscreen]="true">
   <ion-searchbar placeholder="Pesquisar"></ion-searchbar>
   <ion-item-sliding *ngFor="let filme of listaFilmes">
-  <ion-list lines="full"> <!--atributo para que a linha ocupe toda a base do componente-->
+    <ion-list lines="full" [routerLink] = "filme.pagina"> <!--atributo para que a linha ocupe toda a base do componente-->
     <ion-item>
     <ion-thumbnail slot="start">
       <img [src]="filme.cartaz">
@@ -37,7 +37,7 @@
   </ion-item-sliding>
 
   <ion-item-sliding *ngFor="let filme of listaFilmes">
-  <ion-list lines="full">
+  <ion-list lines="full" [routerLink] = "filme.pagina">
     <ion-item>
     <ion-thumbnail slot="start">
       <img [src]="filme.cartaz">
@@ -68,7 +68,7 @@
     </ion-item-sliding>
 
     <ion-item-sliding *ngFor="let filme of listaFilmes">
-    <ion-list lines="full">
+      <ion-list lines="full" [routerLink] = "filme.pagina">
       <ion-item>
       <ion-thumbnail slot="start">
         <img [src]="filme.cartaz">

@@ -17,7 +17,8 @@ export class Tab1Page {
       duracao: '2h 10m',
       classificacao: '75',
       cartaz: '../assets/SMFarFromHome.jpg',
-      generos: ['Ação', 'Aventura', 'Fantasia']
+      generos: ['Ação', 'Aventura', 'Fantasia'],
+      pagina: '/filmeshomem-aranha'
     },
     {
       nome: 'Demon Slayer - Mugen Train: O Filme',
@@ -25,7 +26,8 @@ export class Tab1Page {
       duracao: '1h57m',
       classificacao: '84',
       cartaz: '../assets/KNYMugenTrain.jpg',
-      generos: ['Animação', 'Ação', 'Aventura', 'Fantasia']
+      generos: ['Animação', 'Ação', 'Aventura', 'Fantasia'],
+      pagina: '/filmesdemon-slayer'
     },
     {
       nome: 'Corações de Ferro',
@@ -33,7 +35,8 @@ export class Tab1Page {
       duracao: '2h15m',
       classificacao: '75',
       cartaz: '../assets/IronHearts.jpg',
-      generos: ['Guerra', 'Drama', 'Ação']
+      generos: ['Guerra', 'Drama', 'Ação'],
+      pagina: '/filmesiron-hearts'
     }
   ];
 
